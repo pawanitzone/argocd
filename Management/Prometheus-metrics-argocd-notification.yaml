@@ -31,7 +31,7 @@ kind: ServiceMonitor
 metadata:
   name: argocd-repo-server-metrics
   labels:
-    release: rometheus-operator
+    release: prometheus-operator
 spec:
   selector:
     matchLabels:
