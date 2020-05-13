@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        node {
-            label 'testing'
-        }
-    }
+    
     stages {
         stage ('Deploy_K8S') {
              steps {
