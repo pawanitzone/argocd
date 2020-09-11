@@ -5,7 +5,8 @@ pipeline {
              steps {
                      withCredentials([string(credentialsId: "argocd-deploy-role", variable: 'ARGOCD_AUTH_TOKEN')]) {
                         sh '''
-                        ARGOCD_SERVER="argocd.hireyourtrainer.com"
+                        #ARGOCD_SERVER="argocd.hireyourtrainer.com"
+                        ARGOCD_SERVER="34.123.14.32"
                         APP_NAME="guestbook"
     
                         # Deploy to ArgoCD
